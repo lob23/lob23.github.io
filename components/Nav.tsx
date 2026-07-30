@@ -6,12 +6,12 @@ import { usePathname } from "next/navigation";
 const NAME = "Long (Leon) Ho";
 
 const NAV_ITEMS = [
-  {label: "Education", href: "#edu"},
-  { label: "Work", href: "#work" },
-  { label: "Project and Publication", href: "#project" },
+  {label: "Education", href: "/#edu"},
+  { label: "Work", href: "/#work" },
+  { label: "Project and Publication", href: "/#project" },
   { label: "Blog", href: "/blog" },
   { label: "CV", href: "/cv.pdf" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Nav() {
