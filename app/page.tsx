@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 
 const profile = {
-  name: "Long (Leon) Ho",
+  name: "Bao Long (Leon) Ho",
   role: "Cyber Security Analyst",
   location: "Ho Chi Minh City, Vietnam",
   tagline:

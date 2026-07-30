@@ -3,8 +3,8 @@ import Nav from "@/components/Nav";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Your Name",
-  description: "Personal site and blog",
+  title: "Bao-Long Ho",
+  description: "Portfolio of Bao Long Ho, cybersecurity analyst, AI learner, and software developer",
 };
 
 export default function RootLayout({
