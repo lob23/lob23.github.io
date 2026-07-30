@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 
-const POSTS_DIR = path.join(process.cwd(), "content/posts"); // adjust to your actual folder
+const POSTS_DIR = path.join(process.cwd(), "posts"); // adjust to your actual folder
 
 export type Post = {
   slug: string;
