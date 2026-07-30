@@ -11,7 +11,7 @@ export default function BlogIndex() {
       <ul>
         {posts.map((post) => (
           <li key={post.slug}>
-            {/* 👈 Use encodeURIComponent to handle spaces and special chars safely */}
+            {}
             <Link href={`/blog/${encodeURIComponent(post.slug)}`}>
               {post.slug}
             </Link>

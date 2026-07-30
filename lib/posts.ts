@@ -15,11 +15,19 @@ export type Post = {
   content: string;
 };
 
+function slugify(filename: string): string {
+  return filename
+    .replace(/\.md$/, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 export function getAllPosts(): Post[] {
   const files = fs.readdirSync(POSTS_DIR).filter((f) => f.endsWith(".md"));
 
   const posts = files.map((filename) => {
-    const slug = filename.replace(/\.md$/, "");
+    const slug = slugify(filename);
     const raw = fs.readFileSync(path.join(POSTS_DIR, filename), "utf8");
     const { data, content } = matter(raw);
 

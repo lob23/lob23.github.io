@@ -13,6 +13,7 @@ export default async function BlogPost({
 }) {
   const { slug } = await params;
   const posts = getAllPosts();
+  console.log("Posts:", posts); // Debugging line to check the posts
   const post = posts.find((p) => p.slug === slug);
 
   if (!post) {
