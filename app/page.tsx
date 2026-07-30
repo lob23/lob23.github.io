@@ -8,7 +8,7 @@ const profile = {
   location: "Ho Chi Minh City, Vietnam",
   tagline:
     "Security, Music, and Travel Enthusiast.",
-  bio: `Hi, I’m Long, welcome to my page 👋
+  bio: `Hi, I'm Bao-Long Ho (Leon Ho), welcome to my page 👋
 
 I hold a Bachelor’s degree in Computer Science from the University of Science, VNUHCM. I’m deeply interested in cybersecurity, particularly in security analysis, where I can gain hands-on experience in analyzing and responding to real-world security threats.
 
