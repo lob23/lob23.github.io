@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllPosts } from "@/lib/posts";
+import { getAllPosts,getPostHtml } from "@/lib/posts";
 
 export function generateStaticParams() {
   const posts = getAllPosts();
@@ -27,6 +27,8 @@ export default async function BlogPost({
       </main>
     );
   }
+
+  const htmlContent = await getPostHtml(post.content);
 
   return (
     <main className="section">
@@ -128,15 +130,7 @@ export default async function BlogPost({
           {post.date && <p className="post-meta">{post.date}</p>}
         </header>
 
-        {/*
-          If getAllPosts() returns pre-rendered HTML (e.g. from a markdown
-          pipeline like remark/rehype), render it with dangerouslySetInnerHTML:
-
-            <div className="post-body" dangerouslySetInnerHTML={{ __html: post.content }} />
-
-          If post.content is already plain text or JSX, keep the line below.
-        */}
-        <div className="post-body">{post.content}</div>
+        <div className="post-body" dangerouslySetInnerHTML={{ __html: htmlContent }} />
       </article>
     </main>
   );

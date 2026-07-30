@@ -1,7 +1,8 @@
 ---
-title: "Learning React Hooks"
-date: "2026-08-01"
-tags: ["react", "javascript"]
+title: "My Post"
+date: "2026-07-01"
+excerpt: "..."
+categories: ["engineering", "life"]
 ---
 
 Today I learned about `useEffect` and why...
