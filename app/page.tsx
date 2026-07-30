@@ -19,6 +19,13 @@ My goal is to combine a strong technical foundation with practical operational e
     { label: "GitHub", href: "https://github.com/lob23" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/long-ho-971852257/" },
   ],
+  educations: [
+    {
+      year: "2021 - 2025",
+      title: "Undergraduate, Advanced Program of Computer Science (APCS), University of Science, VNU-HCM",
+      desc: "Grade: High Distinction",
+    },
+  ],
   experience: [
     {
       year: "2025",
@@ -37,6 +44,11 @@ My goal is to combine a strong technical foundation with practical operational e
     },
   ],
   projects: [
+    {
+      year: "2025",
+      title: "Bao-Long Ho, Tran-Tran Trinh, Minh-Triet Tran, and Anh-Duy Tran, “A Systematic Cross-Analysis of Privacy Risks in mHealth Android Applications in Vietnam”",
+      desc: "Proceedings of the 18th International Conference on the Quality of Information and Communications Technology (QUATIC), Lisbon, Portugal, 2025."
+    },
     {
       year: "2025",
       title: "Privacy Analysis of Vietnamese Financial and Medical Android Applications",
@@ -505,10 +517,31 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Edu */}
+      <section className="section" id="edu">
+        <div className="section-head">
+          <h2>Education</h2>
+          <span className="section-num">02</span>
+        </div>
+        <ul className="highlights">
+          {profile.educations.map((h) => (
+            <li className="highlight" key={h.title}>
+              <span className="highlight-year">{h.year}</span>
+              <div>
+                <p className="highlight-title">{h.title}</p>
+                <p className="highlight-desc">{h.desc}</p>
+              </div>
+              <span className="highlight-arrow">↗</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* EXPERIENCE */}
       <section className="section" id="work">
         <div className="section-head">
           <h2>Experience</h2>
-          <span className="section-num">02</span>
+          <span className="section-num">03</span>
         </div>
         <ul className="highlights">
           {profile.experience.map((h) => (
@@ -528,7 +561,7 @@ export default function HomePage() {
       <section className="section" id="project">
         <div className="section-head">
           <h2>Projects &amp; publications</h2>
-          <span className="section-num">03</span>
+          <span className="section-num">04</span>
         </div>
         <ul className="highlights">
           {profile.projects.map((h) => (

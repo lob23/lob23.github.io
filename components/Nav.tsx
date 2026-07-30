@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const NAME = "Long (Leon) Ho";
 
 const NAV_ITEMS = [
+  {label: "Education", href: "#edu"},
   { label: "Work", href: "#work" },
   { label: "Project and Publication", href: "#project" },
   { label: "Blog", href: "/blog" },
